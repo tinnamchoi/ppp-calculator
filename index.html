@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>PPP Converter</title>
+  <title>PPP Calculator (Purchasing power parity)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://tinnamchoi.github.io/shared.css">
   <link rel="stylesheet" href="style.css">
@@ -11,12 +11,26 @@
 </head>
 
 <body>
-  <h1>PPP Converter</h1>
+  <h1>PPP Calculator</h1>
 
-  <button onclick="dec()">-</button>
-  <button onclick="inc()">+</button>
+  Compare money in different countries using purchasing power parity (PPP), data courtesy of the <a href="https://data.worldbank.org/indicator/PA.NUS.PPP">World Bank</a>.
+  <br>
+  <span class="small" id="example"></span>
+  <br>
 
   <div id="container"></div>
+
+  <div id="footer">
+    <div>
+      <button onclick="dec()">-</button>
+      <button onclick="inc()">+</button>
+      <span class="small note">increase/decrease number of countries to compare with</span>
+    </div>
+    <div class="grey">
+      <a href="https://tinnamchoi.github.io/">home</a>&emsp;&bull;&emsp;
+      <a href="https://github.com/tinnamchoi/ppp-calculator">source</a>
+    </div>
+  </div>
 
 </body>
 

@@ -9,21 +9,32 @@ html {
   padding: 0;
   display: flex;
   overflow: auto;
+  justify-content: center;
 }
 
 h1 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 body {
-  margin: auto;
+  margin: auto 5%;
   overflow: auto;
+  line-height: 1.5;
 }
 
 button {
   font-size: 32px;
   width: 64px;
   margin-bottom: 32px;
+}
+
+.note {
+  color: grey;
+}
+
+.small {
+  font-size: 24px;
 }
 
 .field {
@@ -33,14 +44,15 @@ button {
 }
 
 #container {
+  line-height: 2;
   display: flex;
   width: 85vw;
-  height: 65vh;
+  height: 50vh;
   overflow: auto;
-  line-height: 2;
   border-radius: 8px;
   background-color: #F0EDE5;
   border: 1px solid black;
+  margin: 32px auto;
 }
 
 .child {
@@ -51,4 +63,13 @@ button {
   padding: 32px;
   color: black;
   border: 1px solid black;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration-thickness: 1px;
 }

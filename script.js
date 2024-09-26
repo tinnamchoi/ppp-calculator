@@ -23,6 +23,8 @@ function update(element) {
         let amount = document.getElementById('amount_' + i.toString());
         amount.value = Math.round(original_amount * data[country].ppp / data[original_country].ppp * 100) / 100;
     }
+
+    document.getElementById("example").innerHTML = "Example: " + document.getElementById("amount_0").value + " in " + document.getElementById("country_0").value + " has the same purchasing power as " + document.getElementById("amount_1").value + " in " + document.getElementById("country_1").value + " in their respective local currencies.";
 }
 
 function inc() {
@@ -124,4 +126,8 @@ window.onload = async () => {
     while (counter < min) {
         inc();
     }
+    document.getElementById('country_0').selectedIndex = 82;
+    document.getElementById('country_1').selectedIndex = 10;
+    document.getElementById('amount_0').value = 50000;
+    update(document.getElementById('amount_0'));
 }
