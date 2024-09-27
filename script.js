@@ -7,8 +7,8 @@ let countries = document.createElement('select');
 let last_change = 0;
 
 function update(element) {
-    let id = parseInt(element.id.split('_'));
-    let index = id[1];
+    let id = element.id.split('_');
+    let index = parseInt(id[1]);
 
     if (id[0] == 'amount') last_change = index;
 
